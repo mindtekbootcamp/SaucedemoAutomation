@@ -2,8 +2,9 @@ package test;
 
 
 import org.testng.annotations.Test;
-import pages.SauceDemoHomePage;
+import pages.SaucedemoHomePage;
 import pages.SauceDemoLoginPage;
+import pages.SaucedemoHomePage;
 import utilities.BrowserUtils;
 import utilities.Configuration;
 import utilities.TestBase;
@@ -20,7 +21,7 @@ public class TestCase1 extends TestBase {
             saucedemoLoginPage.password.sendKeys(Configuration.getProperty("SaucedemoPassword"));
             saucedemoLoginPage.loginButton.click();
 
-            SauceDemoHomePage saucedemoHomePage = new SauceDemoHomePage();
+            SaucedemoHomePage saucedemoHomePage = new SaucedemoHomePage();
             BrowserUtils.selectDropdownByValue(saucedemoHomePage.filterDropdown,"za");
         }
 

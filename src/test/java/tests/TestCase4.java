@@ -21,6 +21,7 @@ public class TestCase4 extends TestBase {
 //        SaucedemoHomePage saucedemoHomePage = new SaucedemoHomePage ();
 //        BrowserUtils.selectDropdownByValue(saucedemoHomePage.filterDropdown,"za");
 //    }
+
     @Test
     public void testCase4(){
         driver.get (Configuration.getProperty ("SaucedemoURL"));

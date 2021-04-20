@@ -8,10 +8,11 @@ import utilities.Driver;
 
 public class SauceDemoLoginPage {
 
-    public SauceDemoLoginPage(){
-        WebDriver driver= Driver.getDriver ();
-        PageFactory.initElements (driver,this);
 
+    //create constructor
+    public SauceDemoLoginPage(){
+        WebDriver driver = Driver.getDriver();
+        PageFactory.initElements(driver,this);
     }
 
     @FindBy(id = "user-name")
@@ -22,6 +23,5 @@ public class SauceDemoLoginPage {
 
     @FindBy(id = "login-button")
     public WebElement loginButton;
-
 
 }
